@@ -1,0 +1,80 @@
+h1 { 
+ font-size:50px; font-style:serif;
+ text-align:center;
+ }
+
+p {
+ font-size:30px;
+text-align:center;
+}
+ 
+ 
+table, td, th {
+  border: 2px solid;
+  padding: 50px;
+  font-size:22px;
+  text-align:center;
+}
+
+table {
+  border-collapse: collapse;
+  }
+  
+  input {
+  width:50px;
+  height:50px;
+  text-align:center;
+  font-size:22px;
+  border:none;
+  outline:none;
+  }
+
+body{
+    margin:0;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+button{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    padding:20px 30px;
+    font-size:30px;
+
+    cursor:pointer;
+}
+
+
+  
+  div {
+  text-align:center;
+  }
+  #game {
+    display:none;
+  }
+  #Result{
+    color:lime;
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        text-shadow:0 0 10px lime;
+    }
+
+    to{
+        text-shadow:0 0 25px yellow;
+    }
+
+}
