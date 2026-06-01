@@ -104,8 +104,8 @@
     }
 
     .btn{
-      margin-top:25px;
-      padding:12px 28px;
+      margin-top:2px;
+      padding:5px 10px;
       background:#38bdf8;
       border:none;
       border-radius:8px;
@@ -154,14 +154,15 @@
 
     .card{
       background:#1e293b;
-      padding:25px;
-      border-radius:15px;
+      padding:30px;
+      border-radius:10px;
       transition:0.3s;
       box-shadow:0 0 10px rgba(0,0,0,0.4);
     }
 
     .card:hover{
       transform:translateY(-8px);
+      background:#9ca3af;
     }
 
     .card i{
@@ -177,6 +178,8 @@
     .card p{
       color:#cbd5e1;
     }
+
+
 
     /* CONTACT */
 
@@ -242,3 +245,4 @@
 .profile-pic:hover{
    transform:scale(1.08) rotate(3deg);
 }
+
