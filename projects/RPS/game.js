@@ -6,6 +6,9 @@ let randomIndex = Math.floor(Math.random()* 3);
 
 let computerChoice = choices[randomIndex];
 
+let userScore = 0;
+let computerScore = 0;
+
 console.log(computerChoice);
 let result = "";
 
