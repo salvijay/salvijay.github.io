@@ -37,7 +37,7 @@ portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
-└── assets/
+└── projects/
 ```
 
 ## 🚀 Live Demo
