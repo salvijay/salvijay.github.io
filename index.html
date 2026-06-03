@@ -3,169 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jay Portfolio</title>
+  <title>Jay Salvi — Frontend Developer</title>
 
-  <!-- Top Tab Logo -->
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
 
-  <!-- Icons -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel ="stylesheet" href="style.css">
-  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-bracket">&lt;</span>Jay<span class="logo-bracket">/&gt;</span>
+      </div>
 
-  <nav>
-    <div class="logo">JaySalvi</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <ul>
-      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
-      <li><a href="#projects"><i class="fa-solid fa-code"></i> Projects</a></li>
-      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-    </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
 
-  <section class="hero" id="home">
-
-    <img src="luffy.png">
-
-    <h1>Hello, I'm <span>Jay</span></h1>
-
-    <p>
-      I am a 10th standard student learning web development.
-      I know HTML, CSS and JavaScript and I enjoy building websites,
-      games and creative projects.
-    </p>
-
-    <a href="#projects" class="btn">View Projects</a>
-
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-
-    <h2 class="title">About Me</h2>
-
-    <div class="about-box">
-
-      <p>
-        Hi! My name is Jay and I am passionate about coding and design.
-        I started learning web development because I love creating things on the internet.
-        Currently I am learning JavaScript and improving my frontend skills.
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hey there, I'm</p>
+      <h1 class="hero-name">Jay Salvi</h1>
+      <div class="hero-role">
+        <span class="role-prefix">I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        A passionate 10th standard student crafting beautiful web experiences
+        with HTML, CSS &amp; JavaScript. From games to apps — I love building things on the internet.
       </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
 
-      <br>
-
-      <p>
-        Apart from coding, I also enjoy sketching anime characters,
-        playing games and learning new technology.
-      </p>
-
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Languages</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Curiosity</span>
+        </div>
+      </div>
     </div>
 
-  </section>
-
-  <!-- PROJECTS -->
-
-  <section id="projects">
-
-    <h2 class="title">My Projects</h2>
-
-    <div class="projects">
-
-      <div class="card">
-
-   <i class="fa-solid fa-gamepad"></i>
-
-   <h3>Rock Paper & Scissors Game</h3>
-
-   <p>A Rock Paper & Scissors game made using HTML CSS and JavaScript.</p>
-
-   <a href="projects/RPS/game.html" target="_blank" class="btn">
-      Open Project
-   </a>
-
-</div>
-
-
-<div class="card">
-
-   <i class="fa-solid fa-calculator"></i>
-
-   <h3>Math Quiz</h3>
-
-   <p>A fun math quiz website with timer and score system.</p>
-
-   <a href="projects/mathquiz/puzzle.html" target="_blank" class="btn">
-      Open Project
-   </a>
-
-</div>
-
-
-<div class="card">
-
-   <i class="fa-solid fa-image"></i>
-
-   <h3>Weather app</h3>
-
-   <p>A responsive Weather api with hover effects.</p>
-
-   <a href="projects/weather api/index.html" target="_blank" class="btn">
-      Open Project
-   </a>
-
-  </div>
-
+    <div class="hero-image">
+      <div class="img-ring">
+        <img src="luffy.png" alt="Jay Salvi" class="profile-img">
+      </div>
+      <div class="img-badge badge-1"><i class="fa-brands fa-html5"></i> HTML</div>
+      <div class="img-badge badge-2"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+      <div class="img-badge badge-3"><i class="fa-brands fa-js"></i> JS</div>
     </div>
 
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-tag">// about me</div>
+      <h2 class="section-title">Who Am I?</h2>
 
-  <section id="contact">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Jay Salvi</strong>, a student developer with a genuine love for building things on the web.
+            I started learning web development because I wanted to turn my ideas into reality — and I haven't stopped since.
+          </p>
+          <p>
+            Currently I'm focused on mastering <strong>JavaScript</strong> and deepening my frontend skills. I believe in learning by doing,
+            so every project I build teaches me something new.
+          </p>
+          <p>
+            When I'm not coding, you'll find me sketching anime characters, gaming, or exploring the latest in tech.
+          </p>
 
-    <h2 class="title">Contact</h2>
+          <div class="about-facts">
+            <div class="fact"><i class="fa-solid fa-location-dot"></i> India</div>
+            <div class="fact"><i class="fa-solid fa-graduation-cap"></i> 10th Standard</div>
+            <div class="fact"><i class="fa-solid fa-heart"></i> Anime &amp; Gaming</div>
+            <div class="fact"><i class="fa-solid fa-code"></i> Frontend Dev</div>
+          </div>
 
-    <div class="contact-box">
+          <a href="https://github.com/salvijay" target="_blank" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">
+            <i class="fa-brands fa-github"></i> Visit GitHub
+          </a>
+        </div>
 
-      <p>Let's connect and build cool projects together.</p>
-
-      <div class="socials">
-
-   <a href="https://github.com/salvijay" target="_blank">
-      <i class="fa-brands fa-github"></i>
-   </a>
-
-   <a href="https://instagram.com/jaysalvi_23_08_10" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
-   </a>
-
-   <a href="https://linkedin.com/in/jay-salvi" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-   </a>
-
-</div>
-
-      
-
+        <div class="about-card reveal">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-filename">jay.js</span>
+            </div>
+            <pre><code><span class="c-keyword">const</span> <span class="c-var">jay</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">"Jay Salvi"</span>,
+  <span class="c-prop">role</span>: <span class="c-string">"Frontend Developer"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-string">"HTML"</span>, <span class="c-string">"CSS"</span>, <span class="c-string">"JavaScript"</span>
+  ],
+  <span class="c-prop">hobbies</span>: [
+    <span class="c-string">"Sketching Anime"</span>,
+    <span class="c-string">"Gaming"</span>,
+    <span class="c-string">"Building Projects"</span>
+  ],
+  <span class="c-prop">available</span>: <span class="c-keyword">true</span>,
+  <span class="c-prop">greet</span>: <span class="c-keyword">function</span>() {
+    <span class="c-keyword">return</span> <span class="c-string">"Let's build something!"</span>;
+  }
+};</code></pre>
+          </div>
+        </div>
+      </div>
     </div>
-
   </section>
 
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-tag">// skills</div>
+      <h2 class="section-title">What I Know</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility, SEO-friendly structure</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animations, responsive design</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, events, APIs, game logic</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          <span class="skill-percent">65%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, repositories, GitHub Pages</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+          <span class="skill-percent">60%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-tag">// projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="projects/RPS/game.html" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Rock Paper Scissors</h3>
+          <p>A fully interactive Rock Paper Scissors game with score tracking, sound effects, and smooth animations.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+            <div class="project-links">
+              <a href="projects/mathquiz/puzzle.html" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Math Quiz</h3>
+          <p>A fun timed math quiz with a live score system, multiple difficulty levels, and a results summary screen.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <div class="project-links">
+              <a href="projects/weather api/index.html" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Weather App</h3>
+          <p>A responsive weather application using a live API to fetch real-time conditions for any city worldwide.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>API</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <p>Want to see more?</p>
+        <a href="https://github.com/salvijay" target="_blank" class="btn btn-ghost">
+          <i class="fa-brands fa-github"></i> See All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-tag">// contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+
+      <div class="contact-wrapper">
+        <div class="contact-text reveal">
+          <p>I'm always open to chatting about web development, cool project ideas, or just geeking out about anime and games. Feel free to reach out!</p>
+          <p class="contact-email"><i class="fa-solid fa-envelope"></i> Find me on social media below</p>
+        </div>
+
+        <div class="contact-socials reveal">
+          <a href="https://github.com/salvijay" target="_blank" class="social-card">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="social-name">GitHub</span>
+              <span class="social-handle">@salvijay</span>
+            </div>
+            <i class="fa-solid fa-arrow-right social-arrow"></i>
+          </a>
+
+          <a href="https://instagram.com/jaysalvi_23_08_10" target="_blank" class="social-card">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <span class="social-name">Instagram</span>
+              <span class="social-handle">@jaysalvi_23_08_10</span>
+            </div>
+            <i class="fa-solid fa-arrow-right social-arrow"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/jay-salvi" target="_blank" class="social-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <span class="social-name">LinkedIn</span>
+              <span class="social-handle">jay-salvi</span>
+            </div>
+            <i class="fa-solid fa-arrow-right social-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
   <footer>
-    © 2026 Jay Portfolio | Made with ❤️
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Jay<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p>Designed &amp; built by <strong>Jay Salvi</strong> · © 2026</p>
+      <p class="footer-sub">Made with ❤️ &amp; lots of curiosity</p>
+    </div>
   </footer>
 
-  
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
