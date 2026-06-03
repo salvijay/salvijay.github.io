@@ -42,12 +42,7 @@ portfolio/
 
 ## 🚀 Live Demo
 
-Add your GitHub Pages link here:
-
-```
 https://salvijay.github.io/
-```
-
 
 ## 📬 Contact
 
